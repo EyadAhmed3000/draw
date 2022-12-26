@@ -1,0 +1,130 @@
+body {
+    background: #053742;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+    background: #19c2d4;
+  }
+  
+  .pos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -29%);
+  }
+  
+  .b1 {
+    width: 100px;
+    height: 140px;
+    background: #A2DBFA;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .b2 {
+    width: 50px;
+    height: 40px;
+    background: #A2DBFA;
+    transform: translate(-50%, -150%);
+    border-radius: 12px;
+  }
+  
+  .b3 {
+    width: 20px;
+    height: 55px;
+    background: #A2DBFA;
+    transform: translate(-50%, -150%);
+  }
+  
+  .b4 {
+    width: 150px;
+    height: 20px;
+    background: #A2DBFA;
+    transform: translate(-32%, -500%);
+    border-radius: 40px;
+  }
+  
+  .b5 {
+    width: 42px;
+    height: 20px;
+    background: #A2DBFA;
+    transform: translate(169%, -430%) rotate(90deg);
+    border-radius: 40px;
+  }
+  
+  .d1 {
+    width: 20px;
+    height: 20px;
+    background: #E8F0F2;
+    transform: translate(410%, -200%) rotate(90deg);
+    border-radius: 50%;
+    animation: drop1 1s;
+      animation-iteration-count: infinite;
+  }
+  
+  .d2 {
+    width: 20px;
+    height: 20px;
+    background: #E8F0F2;
+    transform: translate(410%, -10%) rotate(90deg);
+    border-radius: 50%;
+    animation: drop2 1s;
+    animation-iteration-count: infinite;
+        opacity: 0;
+        animation-delay: 2s;
+  }
+  
+  .in {
+    width: 100%;
+    height: 50%;
+    background: #E8F0F2;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .inc1 {
+    width: 55px;
+    height: 55px;
+    background: #E8F0F2;
+    border-radius: 50%;
+    position: absolute;
+    top: 33.5%;
+    left: -4.45%;
+  }
+  
+  .inc2 {
+    width: 55px;
+    height: 55px;
+    background: #A2DBFA;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: -4.4%;
+  }
+  
+    @keyframes drop1{
+      0%{
+        opacity: 1;
+        transform: translate(410%,-200%) rotate(90deg);
+      }
+      100%{
+        opacity: 0;
+        transform: translate(410%,-10%) rotate(90deg);
+      }
+    }
+        @keyframes drop2{
+      0%{
+        opacity: 1;
+        transform: translate(410%,-200%) rotate(90deg);
+      }
+      100%{
+        opacity: 0;
+        transform: translate(410%,10%) rotate(90deg);
+      }
+    }
